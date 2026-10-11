@@ -310,7 +310,7 @@ INSERT INTO customers
     (customer_id, customer_first_name, customer_last_name, customer_address,
      customer_city, customer_state, customer_zip, customer_phone, customer_fax)
 VALUES
-    (41, 'Ramez', 'Khalil', '3801 W Temple Ave', 'Pomona', 'CA', '91768', '9512077591', NULL);
+    (41, 'Alex', 'Morgan', '100 Example Ave', 'Sample City', 'CA', '90000', '5550100100', NULL);
 
 
 -- ============================================================
