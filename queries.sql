@@ -303,8 +303,8 @@ ORDER BY customer_first_name;
 
 -- ============================================================
 -- QUERY 25
--- INSERT a new customer record with personal details.
--- Address: 3801 W Temple Ave, Pomona, CA 91768
+-- INSERT a fictional customer record for query practice.
+-- Uses illustrative contact details; no real personal identifiers.
 -- ============================================================
 INSERT INTO customers
     (customer_id, customer_first_name, customer_last_name, customer_address,
