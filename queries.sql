@@ -1,3 +1,9 @@
+USE MusicRetailPortfolio;
+GO
+SET NOCOUNT ON;
+SET LANGUAGE us_english;
+SET XACT_ABORT ON;
+GO
 -- ============================================================
 -- MS SQL Server Database Project
 -- Course: CIS 3050 - Database Management
@@ -116,7 +122,7 @@ SELECT
     FORMAT(order_date, 'MMMM dd, yyyy') AS Ordered
 FROM orders
 WHERE order_date >= '2014-02-01'
-  AND order_date <= '2014-05-30';
+  AND order_date < '2014-05-31';
 
 
 -- ============================================================
@@ -247,7 +253,7 @@ WHERE orders.order_id = 45;
 -- QUERY 20
 -- Retrieve all details for the item with the highest price.
 -- ============================================================
-SELECT TOP 1 *
+SELECT TOP (1) WITH TIES *
 FROM items
 ORDER BY unit_price DESC;
 
@@ -257,6 +263,7 @@ ORDER BY unit_price DESC;
 -- INSERT a new item record, then verify with SELECT.
 -- item_id: 21, title: 'Eugenio Gattinara', artist_id: 17, unit_price: 25.99
 -- ============================================================
+BEGIN TRANSACTION;
 INSERT INTO items (item_id, title, artist_id, unit_price)
 VALUES (21, 'Eugenio Gattinara', 17, 25.99);
 
@@ -284,6 +291,8 @@ DELETE FROM items
 WHERE item_id = 21;
 
 SELECT * FROM items WHERE item_id > 9;
+ROLLBACK TRANSACTION;
+GO
 
 
 -- ============================================================
@@ -293,10 +302,10 @@ SELECT * FROM items WHERE item_id > 9;
 -- Sort by first name.
 -- ============================================================
 SELECT
-    customer_last_name + ', ' + customer_first_name AS Customer,
-    '(' + SUBSTRING(customer_phone, 1, 3) + ') ' +
-    SUBSTRING(customer_phone, 4, 3) + '-' +
-    SUBSTRING(customer_phone, 7, 4) AS Phone
+    CONCAT(customer_last_name, ', ', customer_first_name) AS Customer,
+    CONCAT('(', SUBSTRING(customer_phone, 1, 3), ') ',
+    SUBSTRING(customer_phone, 4, 3), '-',
+    SUBSTRING(customer_phone, 7, 4)) AS Phone
 FROM customers
 ORDER BY customer_first_name;
 
@@ -306,11 +315,15 @@ ORDER BY customer_first_name;
 -- INSERT a fictional customer record for query practice.
 -- Uses illustrative contact details; no real personal identifiers.
 -- ============================================================
+BEGIN TRANSACTION;
 INSERT INTO customers
     (customer_id, customer_first_name, customer_last_name, customer_address,
      customer_city, customer_state, customer_zip, customer_phone, customer_fax)
 VALUES
-    (41, 'Alex', 'Morgan', '100 Example Ave', 'Sample City', 'CA', '90000', '2025550100', NULL);
+    (41, 'Alex', 'Morgan', '100 Example Ave', 'Sample City', 'CA', '90000', '2025550141', NULL);
+SELECT * FROM customers WHERE customer_id = 41;
+ROLLBACK TRANSACTION;
+GO
 
 
 -- ============================================================
@@ -318,13 +331,15 @@ VALUES
 -- CREATE a VIEW that returns all items priced above average.
 -- View updates dynamically as new items are added.
 -- ============================================================
-CREATE VIEW vw_AboveAverageItems AS
+GO
+CREATE OR ALTER VIEW dbo.vw_AboveAverageItems AS
 SELECT title, unit_price
 FROM items
 WHERE unit_price > (SELECT AVG(unit_price) FROM items);
 
--- To query the view:
--- SELECT * FROM vw_AboveAverageItems;
+GO
+SELECT * FROM dbo.vw_AboveAverageItems ORDER BY unit_price DESC, title;
+GO
 
 
 -- ============================================================
@@ -342,8 +357,8 @@ WHERE unit_price > (SELECT AVG(unit_price) FROM items);
 -- ============================================================
 SELECT
     e.employee_id,
-    e.employee_first_name + ' ' + e.employee_last_name AS Employee,
-    m.employee_first_name + ' ' + m.employee_last_name AS Manager
+    e.first_name + ' ' + e.last_name AS Employee,
+    m.first_name + ' ' + m.last_name AS Manager
 FROM employees e
 LEFT JOIN employees m ON e.manager_id = m.employee_id;
 
@@ -352,8 +367,11 @@ LEFT JOIN employees m ON e.manager_id = m.employee_id;
 -- QUERY 28
 -- INSERT a new artist record.
 -- ============================================================
+BEGIN TRANSACTION;
 INSERT INTO artists (artist_id, artist_name)
-VALUES (22, 'Ramez Khalil');
+VALUES (22, 'Demo Ensemble');
+SELECT * FROM artists WHERE artist_id = 22;
+ROLLBACK TRANSACTION;
 
 
 -- ============================================================
@@ -375,15 +393,13 @@ ORDER BY Total_Customers DESC;
 -- the average number of orders per customer.
 -- Sort by total orders descending.
 -- ============================================================
-SELECT customer_id, COUNT(*) AS Total_Orders
-FROM orders
-GROUP BY customer_id
-HAVING COUNT(*) > (
-    SELECT AVG(OrderCount)
-    FROM (
-        SELECT COUNT(*) AS OrderCount
-        FROM orders
-        GROUP BY customer_id
-    ) AS AvgTable
+WITH CustomerOrders AS (
+ SELECT c.customer_id, COUNT(o.order_id) AS Total_Orders
+ FROM dbo.customers c LEFT JOIN dbo.orders o ON o.customer_id=c.customer_id
+ GROUP BY c.customer_id
 )
-ORDER BY Total_Orders DESC;
+SELECT customer_id, Total_Orders
+FROM CustomerOrders
+WHERE Total_Orders > (SELECT AVG(CAST(Total_Orders AS decimal(12,4))) FROM CustomerOrders)
+ORDER BY Total_Orders DESC, customer_id;
+GO

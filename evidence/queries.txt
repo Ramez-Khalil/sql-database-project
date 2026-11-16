@@ -1,0 +1,621 @@
+Changed database context to 'MusicRetailPortfolio'.
+Changed language setting to us_english.
+customer_last_name|customer_city|customer_phone
+------------------|-------------|--------------
+Demo05|Fresno|2025550105
+Demo10|Fresno|2025550110
+Demo15|Fresno|2025550115
+Demo20|Fresno|2025550120
+Demo25|Fresno|2025550125
+Demo30|Fresno|2025550130
+Demo35|Fresno|2025550135
+Demo40|Fresno|2025550140
+Demo04|Washington|2025550104
+Demo09|Washington|2025550109
+Demo14|Washington|2025550114
+Demo19|Washington|2025550119
+Demo24|Washington|2025550124
+Demo29|Washington|2025550129
+Demo34|Washington|2025550134
+Demo39|Washington|2025550139
+Demo03|Charlotte|2025550103
+Demo08|Charlotte|2025550108
+Demo13|Charlotte|2025550113
+Demo18|Charlotte|2025550118
+Demo23|Charlotte|2025550123
+Demo28|Charlotte|2025550128
+Demo33|Charlotte|2025550133
+Demo38|Charlotte|2025550138
+Demo02|Newark|2025550102
+Demo07|Newark|2025550107
+Demo12|Newark|2025550112
+Demo17|Newark|2025550117
+Demo22|Newark|2025550122
+Demo27|Newark|2025550127
+Demo32|Newark|2025550132
+Demo37|Newark|2025550137
+Demo01|New York|2025550101
+Demo06|New York|2025550106
+Demo11|New York|2025550111
+Demo16|New York|2025550116
+Demo21|New York|2025550121
+Demo26|New York|2025550126
+Demo31|New York|2025550131
+Demo36|New York|2025550136
+customer_first_name|customer_state|customer_phone
+-------------------|--------------|--------------
+Customer5|CA|2025550105
+Customer10|CA|2025550110
+Customer15|CA|2025550115
+Customer20|CA|2025550120
+Customer25|CA|2025550125
+Customer30|CA|2025550130
+Customer35|CA|2025550135
+Customer40|CA|2025550140
+Customer4|DC|2025550104
+Customer9|DC|2025550109
+Customer14|DC|2025550114
+Customer19|DC|2025550119
+Customer24|DC|2025550124
+Customer29|DC|2025550129
+Customer34|DC|2025550134
+Customer39|DC|2025550139
+Customer3|NC|2025550103
+Customer8|NC|2025550108
+Customer13|NC|2025550113
+Customer18|NC|2025550118
+Customer23|NC|2025550123
+Customer28|NC|2025550128
+Customer33|NC|2025550133
+Customer38|NC|2025550138
+Customer2|NJ|2025550102
+Customer7|NJ|2025550107
+Customer12|NJ|2025550112
+Customer17|NJ|2025550117
+Customer22|NJ|2025550122
+Customer27|NJ|2025550127
+Customer32|NJ|2025550132
+Customer37|NJ|2025550137
+Customer1|NY|2025550101
+Customer6|NY|2025550106
+Customer11|NY|2025550111
+Customer16|NY|2025550116
+Customer21|NY|2025550121
+Customer26|NY|2025550126
+Customer31|NY|2025550131
+Customer36|NY|2025550136
+customer_first_name|customer_last_name|customer_city|customer_phone|customer_fax
+-------------------|------------------|-------------|--------------|------------
+Customer1|Demo01|New York|2025550101|NULL
+Customer2|Demo02|Newark|2025550102|NULL
+Customer3|Demo03|Charlotte|2025550103|NULL
+Customer5|Demo05|Fresno|2025550105|NULL
+Customer6|Demo06|New York|2025550106|NULL
+Customer7|Demo07|Newark|2025550107|NULL
+Customer9|Demo09|Washington|2025550109|NULL
+Customer10|Demo10|Fresno|2025550110|NULL
+Customer11|Demo11|New York|2025550111|NULL
+Customer13|Demo13|Charlotte|2025550113|NULL
+Customer14|Demo14|Washington|2025550114|NULL
+Customer15|Demo15|Fresno|2025550115|NULL
+Customer17|Demo17|Newark|2025550117|NULL
+Customer18|Demo18|Charlotte|2025550118|NULL
+Customer19|Demo19|Washington|2025550119|NULL
+Customer21|Demo21|New York|2025550121|NULL
+Customer22|Demo22|Newark|2025550122|NULL
+Customer23|Demo23|Charlotte|2025550123|NULL
+Customer25|Demo25|Fresno|2025550125|NULL
+Customer26|Demo26|New York|2025550126|NULL
+Customer27|Demo27|Newark|2025550127|NULL
+Customer29|Demo29|Washington|2025550129|NULL
+Customer30|Demo30|Fresno|2025550130|NULL
+Customer31|Demo31|New York|2025550131|NULL
+Customer33|Demo33|Charlotte|2025550133|NULL
+Customer34|Demo34|Washington|2025550134|NULL
+Customer35|Demo35|Fresno|2025550135|NULL
+Customer37|Demo37|Newark|2025550137|NULL
+Customer38|Demo38|Charlotte|2025550138|NULL
+Customer39|Demo39|Washington|2025550139|NULL
+Customer40|Demo40|Fresno|2025550140|2025550199
+Customer36|Demo36|New York|2025550136|2025550199
+Customer32|Demo32|Newark|2025550132|2025550199
+Customer28|Demo28|Charlotte|2025550128|2025550199
+Customer24|Demo24|Washington|2025550124|2025550199
+Customer20|Demo20|Fresno|2025550120|2025550199
+Customer16|Demo16|New York|2025550116|2025550199
+Customer12|Demo12|Newark|2025550112|2025550199
+Customer8|Demo08|Charlotte|2025550108|2025550199
+Customer4|Demo04|Washington|2025550104|2025550199
+customer_id|customer_first_name|customer_last_name|customer_address|customer_city|customer_state|customer_zip|customer_phone|customer_fax
+-----------|-------------------|------------------|----------------|-------------|--------------|------------|--------------|------------
+1|Customer1|Demo01|1 Example Lane|New York|NY|10001|2025550101|NULL
+2|Customer2|Demo02|2 Example Lane|Newark|NJ|10001|2025550102|NULL
+3|Customer3|Demo03|3 Example Lane|Charlotte|NC|10001|2025550103|NULL
+6|Customer6|Demo06|6 Example Lane|New York|NY|10001|2025550106|NULL
+7|Customer7|Demo07|7 Example Lane|Newark|NJ|10001|2025550107|NULL
+8|Customer8|Demo08|8 Example Lane|Charlotte|NC|10001|2025550108|2025550199
+11|Customer11|Demo11|11 Example Lane|New York|NY|10001|2025550111|NULL
+12|Customer12|Demo12|12 Example Lane|Newark|NJ|10001|2025550112|2025550199
+13|Customer13|Demo13|13 Example Lane|Charlotte|NC|10001|2025550113|NULL
+16|Customer16|Demo16|16 Example Lane|New York|NY|10001|2025550116|2025550199
+17|Customer17|Demo17|17 Example Lane|Newark|NJ|10001|2025550117|NULL
+18|Customer18|Demo18|18 Example Lane|Charlotte|NC|10001|2025550118|NULL
+21|Customer21|Demo21|21 Example Lane|New York|NY|10001|2025550121|NULL
+22|Customer22|Demo22|22 Example Lane|Newark|NJ|10001|2025550122|NULL
+23|Customer23|Demo23|23 Example Lane|Charlotte|NC|10001|2025550123|NULL
+26|Customer26|Demo26|26 Example Lane|New York|NY|10001|2025550126|NULL
+27|Customer27|Demo27|27 Example Lane|Newark|NJ|10001|2025550127|NULL
+28|Customer28|Demo28|28 Example Lane|Charlotte|NC|10001|2025550128|2025550199
+31|Customer31|Demo31|31 Example Lane|New York|NY|10001|2025550131|NULL
+32|Customer32|Demo32|32 Example Lane|Newark|NJ|10001|2025550132|2025550199
+33|Customer33|Demo33|33 Example Lane|Charlotte|NC|10001|2025550133|NULL
+36|Customer36|Demo36|36 Example Lane|New York|NY|10001|2025550136|2025550199
+37|Customer37|Demo37|37 Example Lane|Newark|NJ|10001|2025550137|NULL
+38|Customer38|Demo38|38 Example Lane|Charlotte|NC|10001|2025550138|NULL
+customer_id|customer_first_name|customer_last_name|customer_address|customer_city|customer_state|customer_zip|customer_phone|customer_fax
+-----------|-------------------|------------------|----------------|-------------|--------------|------------|--------------|------------
+5|Customer5|Demo05|5 Example Lane|Fresno|CA|93711|2025550105|NULL
+10|Customer10|Demo10|10 Example Lane|Fresno|CA|93711|2025550110|NULL
+15|Customer15|Demo15|15 Example Lane|Fresno|CA|93711|2025550115|NULL
+20|Customer20|Demo20|20 Example Lane|Fresno|CA|93711|2025550120|2025550199
+25|Customer25|Demo25|25 Example Lane|Fresno|CA|93711|2025550125|NULL
+30|Customer30|Demo30|30 Example Lane|Fresno|CA|93711|2025550130|NULL
+35|Customer35|Demo35|35 Example Lane|Fresno|CA|93711|2025550135|NULL
+40|Customer40|Demo40|40 Example Lane|Fresno|CA|93711|2025550140|2025550199
+Customer|Phone
+--------|-----
+Customer1 Demo01|2025550101
+Customer2 Demo02|2025550102
+Customer4 Demo04|2025550104
+Customer6 Demo06|2025550106
+Customer7 Demo07|2025550107
+Customer9 Demo09|2025550109
+Customer11 Demo11|2025550111
+Customer12 Demo12|2025550112
+Customer14 Demo14|2025550114
+Customer16 Demo16|2025550116
+Customer17 Demo17|2025550117
+Customer19 Demo19|2025550119
+Customer21 Demo21|2025550121
+Customer22 Demo22|2025550122
+Customer24 Demo24|2025550124
+Customer26 Demo26|2025550126
+Customer27 Demo27|2025550127
+Customer29 Demo29|2025550129
+Customer31 Demo31|2025550131
+Customer32 Demo32|2025550132
+Customer34 Demo34|2025550134
+Customer36 Demo36|2025550136
+Customer37 Demo37|2025550137
+Customer39 Demo39|2025550139
+Cities
+------
+Washington
+Newark
+New York
+Fresno
+Charlotte
+title|Original|Sale
+-----|--------|----
+Album 09|19.00|16.1500
+Album 19|19.00|16.1500
+Album 18|18.00|15.3000
+Album 08|18.00|15.3000
+Album 07|17.00|14.4500
+Album 17|17.00|14.4500
+Album 06|16.00|13.6000
+Album 16|16.00|13.6000
+Album 15|15.00|12.7500
+Album 05|15.00|12.7500
+Album 04|14.00|11.9000
+Album 14|14.00|11.9000
+Album 13|13.00|11.0500
+Album 03|13.00|11.0500
+Album 02|12.00|10.2000
+Album 12|12.00|10.2000
+Album 11|11.00|9.3500
+Album 01|11.00|9.3500
+Album 10|10.00|8.5000
+Album 20|10.00|8.5000
+customer_city|customer_first_name|customer_last_name|customer_zip
+-------------|-------------------|------------------|------------
+Fresno|Customer5|Demo05|93711
+Fresno|Customer10|Demo10|93711
+Fresno|Customer15|Demo15|93711
+Fresno|Customer20|Demo20|93711
+Fresno|Customer25|Demo25|93711
+Fresno|Customer30|Demo30|93711
+Fresno|Customer35|Demo35|93711
+Fresno|Customer40|Demo40|93711
+order_id|Ordered
+--------|-------
+11|February 03, 2014
+12|February 06, 2014
+13|February 09, 2014
+14|February 12, 2014
+15|February 15, 2014
+16|February 18, 2014
+17|February 21, 2014
+18|February 24, 2014
+19|February 27, 2014
+20|March 02, 2014
+21|March 05, 2014
+22|March 08, 2014
+23|March 11, 2014
+24|March 14, 2014
+25|March 17, 2014
+26|March 20, 2014
+27|March 23, 2014
+28|March 26, 2014
+29|March 29, 2014
+30|April 01, 2014
+31|April 04, 2014
+32|April 07, 2014
+33|April 10, 2014
+34|April 13, 2014
+35|April 16, 2014
+36|April 19, 2014
+37|April 22, 2014
+38|April 25, 2014
+39|April 28, 2014
+40|May 01, 2014
+41|May 04, 2014
+42|May 07, 2014
+43|May 10, 2014
+44|May 13, 2014
+45|May 16, 2014
+46|May 19, 2014
+47|May 22, 2014
+48|May 25, 2014
+49|May 28, 2014
+101|February 01, 2014
+102|May 30, 2014
+order_id|Ordered
+--------|-------
+40|05/01/14
+41|05/04/14
+42|05/07/14
+43|05/10/14
+44|05/13/14
+45|05/16/14
+46|05/19/14
+47|05/22/14
+48|05/25/14
+49|05/28/14
+50|05/31/14
+102|05/30/14
+103|05/31/14
+order_id|customer_id|Days
+--------|-----------|----
+5|6|20
+10|11|20
+15|16|20
+20|21|20
+25|2|20
+30|7|20
+35|12|20
+40|17|20
+45|22|20
+50|3|20
+order_id|customer_id|employee_id|order_date
+--------|-----------|-----------|----------
+52|5|NULL|2014-06-06
+104|1|1|2014-06-01
+39|16|4|2014-04-28
+26|3|3|2014-03-20
+13|14|2|2014-02-09
+order_id|order_date|shipped_date|Order_Day
+--------|----------|------------|---------
+50|2014-05-31|2014-06-20|Saturday
+103|2014-05-31|2014-06-04|Saturday
+48|2014-05-25|2014-05-29|Sunday
+43|2014-05-10|2014-05-14|Saturday
+41|2014-05-04|2014-05-08|Sunday
+36|2014-04-19|2014-04-23|Saturday
+34|2014-04-13|2014-04-17|Sunday
+29|2014-03-29|2014-04-02|Saturday
+27|2014-03-23|2014-03-27|Sunday
+22|2014-03-08|2014-03-12|Saturday
+20|2014-03-02|2014-03-22|Sunday
+15|2014-02-15|2014-03-07|Saturday
+101|2014-02-01|2014-02-05|Saturday
+8|2014-01-25|2014-01-29|Saturday
+6|2014-01-19|2014-01-23|Sunday
+1|2014-01-04|2014-01-08|Saturday
+customer_last_name|customer_phone|customer_fax
+------------------|--------------|------------
+Demo04|2025550104|2025550199
+Demo08|2025550108|2025550199
+Demo12|2025550112|2025550199
+Demo16|2025550116|2025550199
+Demo20|2025550120|2025550199
+Demo24|2025550124|2025550199
+Demo28|2025550128|2025550199
+Demo32|2025550132|2025550199
+Demo36|2025550136|2025550199
+Demo40|2025550140|2025550199
+Total_Orders
+------------
+56
+item_id|title|artist_name|unit_price
+-------|-----|-----------|----------
+1|Album 01|Studio Ensemble 11|11.00
+2|Album 02|Studio Ensemble 12|12.00
+3|Album 03|Studio Ensemble 13|13.00
+4|Album 04|Studio Ensemble 14|14.00
+5|Album 05|Studio Ensemble 15|15.00
+6|Album 06|Studio Ensemble 16|16.00
+7|Album 07|Studio Ensemble 17|17.00
+8|Album 08|Studio Ensemble 18|18.00
+9|Album 09|Studio Ensemble 19|19.00
+10|Album 10|Studio Ensemble 20|10.00
+11|Album 11|Studio Ensemble 21|11.00
+12|Album 12|Studio Ensemble 10|12.00
+13|Album 13|Studio Ensemble 11|13.00
+14|Album 14|Studio Ensemble 12|14.00
+15|Album 15|Studio Ensemble 13|15.00
+16|Album 16|Studio Ensemble 14|16.00
+17|Album 17|Studio Ensemble 15|17.00
+18|Album 18|Studio Ensemble 16|18.00
+19|Album 19|Studio Ensemble 17|19.00
+20|Album 20|Studio Ensemble 18|10.00
+customer_id|Customer_Name|order_id|employee_id
+-----------|-------------|--------|-----------
+1|Customer1 Demo01|24|NULL
+1|Customer1 Demo01|48|NULL
+1|Customer1 Demo01|101|1
+1|Customer1 Demo01|102|1
+1|Customer1 Demo01|103|1
+1|Customer1 Demo01|104|1
+2|Customer2 Demo02|1|2
+2|Customer2 Demo02|25|2
+2|Customer2 Demo02|49|2
+3|Customer3 Demo03|2|3
+3|Customer3 Demo03|26|3
+3|Customer3 Demo03|50|3
+4|Customer4 Demo04|3|4
+4|Customer4 Demo04|27|4
+4|Customer4 Demo04|51|4
+5|Customer5 Demo05|4|NULL
+5|Customer5 Demo05|28|NULL
+5|Customer5 Demo05|52|NULL
+6|Customer6 Demo06|5|2
+6|Customer6 Demo06|29|2
+7|Customer7 Demo07|6|3
+7|Customer7 Demo07|30|3
+8|Customer8 Demo08|7|4
+8|Customer8 Demo08|31|4
+9|Customer9 Demo09|8|NULL
+9|Customer9 Demo09|32|NULL
+10|Customer10 Demo10|9|2
+10|Customer10 Demo10|33|2
+11|Customer11 Demo11|10|3
+11|Customer11 Demo11|34|3
+12|Customer12 Demo12|11|4
+12|Customer12 Demo12|35|4
+13|Customer13 Demo13|12|NULL
+13|Customer13 Demo13|36|NULL
+14|Customer14 Demo14|13|2
+14|Customer14 Demo14|37|2
+15|Customer15 Demo15|14|3
+15|Customer15 Demo15|38|3
+16|Customer16 Demo16|15|4
+16|Customer16 Demo16|39|4
+17|Customer17 Demo17|16|NULL
+17|Customer17 Demo17|40|NULL
+18|Customer18 Demo18|17|2
+18|Customer18 Demo18|41|2
+19|Customer19 Demo19|18|3
+19|Customer19 Demo19|42|3
+20|Customer20 Demo20|19|4
+20|Customer20 Demo20|43|4
+21|Customer21 Demo21|20|NULL
+21|Customer21 Demo21|44|NULL
+22|Customer22 Demo22|21|2
+22|Customer22 Demo22|45|2
+23|Customer23 Demo23|22|3
+23|Customer23 Demo23|46|3
+24|Customer24 Demo24|23|4
+24|Customer24 Demo24|47|4
+25|Customer25 Demo25|NULL|NULL
+26|Customer26 Demo26|NULL|NULL
+27|Customer27 Demo27|NULL|NULL
+28|Customer28 Demo28|NULL|NULL
+29|Customer29 Demo29|NULL|NULL
+30|Customer30 Demo30|NULL|NULL
+31|Customer31 Demo31|NULL|NULL
+32|Customer32 Demo32|NULL|NULL
+33|Customer33 Demo33|NULL|NULL
+34|Customer34 Demo34|NULL|NULL
+35|Customer35 Demo35|NULL|NULL
+36|Customer36 Demo36|NULL|NULL
+37|Customer37 Demo37|NULL|NULL
+38|Customer38 Demo38|NULL|NULL
+39|Customer39 Demo39|NULL|NULL
+40|Customer40 Demo40|NULL|NULL
+customer_id|Customer_Name|order_id|order_date
+-----------|-------------|--------|----------
+2|Customer2 Demo02|1|2014-01-04
+3|Customer3 Demo03|2|2014-01-07
+4|Customer4 Demo04|3|2014-01-10
+5|Customer5 Demo05|4|2014-01-13
+6|Customer6 Demo06|5|2014-01-16
+7|Customer7 Demo07|6|2014-01-19
+8|Customer8 Demo08|7|2014-01-22
+9|Customer9 Demo09|8|2014-01-25
+10|Customer10 Demo10|9|2014-01-28
+11|Customer11 Demo11|10|2014-01-31
+12|Customer12 Demo12|11|2014-02-03
+13|Customer13 Demo13|12|2014-02-06
+14|Customer14 Demo14|13|2014-02-09
+15|Customer15 Demo15|14|2014-02-12
+16|Customer16 Demo16|15|2014-02-15
+17|Customer17 Demo17|16|2014-02-18
+18|Customer18 Demo18|17|2014-02-21
+19|Customer19 Demo19|18|2014-02-24
+20|Customer20 Demo20|19|2014-02-27
+21|Customer21 Demo21|20|2014-03-02
+22|Customer22 Demo22|21|2014-03-05
+23|Customer23 Demo23|22|2014-03-08
+24|Customer24 Demo24|23|2014-03-11
+1|Customer1 Demo01|24|2014-03-14
+2|Customer2 Demo02|25|2014-03-17
+3|Customer3 Demo03|26|2014-03-20
+4|Customer4 Demo04|27|2014-03-23
+5|Customer5 Demo05|28|2014-03-26
+6|Customer6 Demo06|29|2014-03-29
+7|Customer7 Demo07|30|2014-04-01
+8|Customer8 Demo08|31|2014-04-04
+9|Customer9 Demo09|32|2014-04-07
+10|Customer10 Demo10|33|2014-04-10
+11|Customer11 Demo11|34|2014-04-13
+12|Customer12 Demo12|35|2014-04-16
+13|Customer13 Demo13|36|2014-04-19
+14|Customer14 Demo14|37|2014-04-22
+15|Customer15 Demo15|38|2014-04-25
+16|Customer16 Demo16|39|2014-04-28
+17|Customer17 Demo17|40|2014-05-01
+18|Customer18 Demo18|41|2014-05-04
+19|Customer19 Demo19|42|2014-05-07
+20|Customer20 Demo20|43|2014-05-10
+21|Customer21 Demo21|44|2014-05-13
+22|Customer22 Demo22|45|2014-05-16
+23|Customer23 Demo23|46|2014-05-19
+24|Customer24 Demo24|47|2014-05-22
+1|Customer1 Demo01|48|2014-05-25
+2|Customer2 Demo02|49|2014-05-28
+3|Customer3 Demo03|50|2014-05-31
+4|Customer4 Demo04|51|2014-06-03
+5|Customer5 Demo05|52|2014-06-06
+1|Customer1 Demo01|101|2014-02-01
+1|Customer1 Demo01|102|2014-05-30
+1|Customer1 Demo01|103|2014-05-31
+1|Customer1 Demo01|104|2014-06-01
+Customer_Name|customer_address
+-------------|----------------
+Customer22 Demo22|22 Example Lane
+item_id|title|artist_id|unit_price
+-------|-----|---------|----------
+9|Album 09|19|19.00
+19|Album 19|17|19.00
+item_id|title|artist_id|unit_price
+-------|-----|---------|----------
+20|Album 20|18|10.00
+21|Eugenio Gattinara|17|25.99
+item_id|title|artist_id|unit_price
+-------|-----|---------|----------
+20|Album 20|18|10.00
+21|Eugenio Gattinara|17|19.77
+item_id|title|artist_id|unit_price
+-------|-----|---------|----------
+10|Album 10|20|10.00
+11|Album 11|21|11.00
+12|Album 12|10|12.00
+13|Album 13|11|13.00
+14|Album 14|12|14.00
+15|Album 15|13|15.00
+16|Album 16|14|16.00
+17|Album 17|15|17.00
+18|Album 18|16|18.00
+19|Album 19|17|19.00
+20|Album 20|18|10.00
+Customer|Phone
+--------|-----
+Demo01, Customer1|(202) 555-0101
+Demo10, Customer10|(202) 555-0110
+Demo11, Customer11|(202) 555-0111
+Demo12, Customer12|(202) 555-0112
+Demo13, Customer13|(202) 555-0113
+Demo14, Customer14|(202) 555-0114
+Demo15, Customer15|(202) 555-0115
+Demo16, Customer16|(202) 555-0116
+Demo17, Customer17|(202) 555-0117
+Demo18, Customer18|(202) 555-0118
+Demo19, Customer19|(202) 555-0119
+Demo02, Customer2|(202) 555-0102
+Demo20, Customer20|(202) 555-0120
+Demo21, Customer21|(202) 555-0121
+Demo22, Customer22|(202) 555-0122
+Demo23, Customer23|(202) 555-0123
+Demo24, Customer24|(202) 555-0124
+Demo25, Customer25|(202) 555-0125
+Demo26, Customer26|(202) 555-0126
+Demo27, Customer27|(202) 555-0127
+Demo28, Customer28|(202) 555-0128
+Demo29, Customer29|(202) 555-0129
+Demo03, Customer3|(202) 555-0103
+Demo30, Customer30|(202) 555-0130
+Demo31, Customer31|(202) 555-0131
+Demo32, Customer32|(202) 555-0132
+Demo33, Customer33|(202) 555-0133
+Demo34, Customer34|(202) 555-0134
+Demo35, Customer35|(202) 555-0135
+Demo36, Customer36|(202) 555-0136
+Demo37, Customer37|(202) 555-0137
+Demo38, Customer38|(202) 555-0138
+Demo39, Customer39|(202) 555-0139
+Demo04, Customer4|(202) 555-0104
+Demo40, Customer40|(202) 555-0140
+Demo05, Customer5|(202) 555-0105
+Demo06, Customer6|(202) 555-0106
+Demo07, Customer7|(202) 555-0107
+Demo08, Customer8|(202) 555-0108
+Demo09, Customer9|(202) 555-0109
+customer_id|customer_first_name|customer_last_name|customer_address|customer_city|customer_state|customer_zip|customer_phone|customer_fax
+-----------|-------------------|------------------|----------------|-------------|--------------|------------|--------------|------------
+41|Alex|Morgan|100 Example Ave|Sample City|CA|90000|2025550141|NULL
+title|unit_price
+-----|----------
+Album 09|19.00
+Album 19|19.00
+Album 08|18.00
+Album 18|18.00
+Album 07|17.00
+Album 17|17.00
+Album 06|16.00
+Album 16|16.00
+Album 05|15.00
+Album 15|15.00
+employee_id|Employee|Manager
+-----------|--------|-------
+1|Alex Reed|NULL
+2|Jordan Lin|Alex Reed
+3|Casey Bell|Alex Reed
+4|Morgan Lake|Jordan Lin
+artist_id|artist_name
+---------|-----------
+22|Demo Ensemble
+customer_state|Total_Customers
+--------------|---------------
+CA|8
+DC|8
+NC|8
+NJ|8
+NY|8
+customer_id|Total_Orders
+-----------|------------
+1|6
+2|3
+3|3
+4|3
+5|3
+6|2
+7|2
+8|2
+9|2
+10|2
+11|2
+12|2
+13|2
+14|2
+15|2
+16|2
+17|2
+18|2
+19|2
+20|2
+21|2
+22|2
+23|2
+24|2
+
