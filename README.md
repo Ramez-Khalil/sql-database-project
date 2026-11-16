@@ -40,7 +40,7 @@ Executed on SQL Server 2025, version **17.0.1000.7**, on November 16, 2026.
 - 14 automated assertions passed
 - Mean orders per customer: **1.4000**, including 16 customers with no orders
 
-These are demonstration results, not real business activity or performance benchmarks. Screenshots are a separate evidence step; the text logs record actual execution.
+The text logs record execution against the synthetic demonstration dataset.
 
 ## Implementation highlights
 

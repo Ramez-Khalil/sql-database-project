@@ -4,7 +4,7 @@
 
 The public dataset is newly generated, entirely synthetic and deliberately includes zero-order customers, missing fax numbers, unshipped orders, price ties and date boundaries. It preserves the six-table model and field names but does not reproduce original course results.
 
-Query 5 uses Fresno, which is the actual city intended by the source's ambiguous wording. Query 22 uses the explicit field-list price of 19.77; the source also mentions19.05. Query25 uses41, matching the detailed field list; the source prose also mentions27. Public personal details are fictional. Query28 demonstrates an artist insert, not state aggregation.
+The examples cover Fresno customer filtering, a catalog price update to 19.77, a fictional customer insert with ID41, and an artist insert. Insert, update and delete demonstrations use transactions and roll back their changes.
 
 Dates are SQL DATE values. May's inclusive BETWEEN is appropriate for this type. The broader date range uses an exclusive next-day upper bound. English date names are selected explicitly for deterministic weekend output.
 
